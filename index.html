@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akyikat Kurmanbekova Portfolio</title>
+<meta name="description" content="Portfolio of Akyikat Kurmanbekova, a Computer Programming and Analysis student at Fanshawe College (graduating December 2026) looking for a first role in IT. React, Node, Express, Socket.IO and MongoDB projects.">
+<meta property="og:title" content="Akyikat Kurmanbekova Portfolio">
+<meta property="og:description" content="Computer Programming and Analysis student at Fanshawe College looking for a first role in IT. See my projects.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310101f'/%3E%3Ccircle cx='32' cy='32' r='15' fill='%239fb4ff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>
+/* apply the saved theme before the first paint so there is no flash */
+document.documentElement.className += ' js';
+try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+
+</head>
+<body>
+<div class="sky" id="sky" aria-hidden="true">
+  <div class="sky-layer sky-night" id="night">
+    <div id="stars"></div>
+  </div>
+  <div class="sky-layer sky-day"></div>
+  <div class="orb">
+    <div class="orb-moon"><img class="moon" src="assets/moon.png" width="320" height="320" alt=""></div>
+    <div class="orb-sun"><div class="sun-rays"></div><div class="sun-halo"></div><div class="sun-disc"></div></div>
+  </div>
+  <div class="clouds">
+      <div class="cloud" style="--y:7%;--w:360px;--t:120s;--dl:-34s;--o:.95;--b:1px;--rx:62vw"></div>
+      <div class="cloud" style="--y:19%;--w:240px;--t:90s;--dl:-70s;--o:.8;--b:2px;--rx:18vw"></div>
+      <div class="cloud" style="--y:31%;--w:440px;--t:150s;--dl:-110s;--o:.9;--b:1px;--rx:38vw"></div>
+      <div class="cloud" style="--y:46%;--w:280px;--t:100s;--dl:-12s;--o:.75;--b:2px;--rx:78vw"></div>
+      <div class="cloud" style="--y:58%;--w:380px;--t:135s;--dl:-95s;--o:.9;--b:1px;--rx:8vw"></div>
+      <div class="cloud" style="--y:71%;--w:300px;--t:110s;--dl:-55s;--o:.8;--b:2px;--rx:50vw"></div>
+      <div class="cloud" style="--y:86%;--w:420px;--t:160s;--dl:-130s;--o:.95;--b:1px;--rx:25vw"></div>
+  </div>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark" aria-hidden="true">A</span><span data-text="name">Aku</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a class="nav-contact" href="#contact">Contact</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to the day sky" title="Switch to the day sky">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7"/></g></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5a8.6 8.6 0 1 0 10.7 10.7z" fill="currentColor"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="status rise" style="--i:0">Graduating December 2026 · open to work · ready to relocate</p>
+        <h1 id="hero-title" class="rise" style="--i:1">Hi, I'm <span class="hl" data-text="name">Aku</span>.</h1>
+        <p class="lede rise" style="--i:2">I'm finishing the Computer Programming and Analysis program at Fanshawe College. I build web apps and APIs with <strong>JavaScript, React, Node and C#/.NET</strong>, and I'm looking for my first job in IT. I'm ready to relocate anywhere.</p>
+        <div class="cta rise" style="--i:3">
+          <a class="btn btn-primary" href="#projects">See my projects <span class="arrow" aria-hidden="true">↓</span></a>
+          <a class="btn btn-ghost" href="assets/Resume_AkyikatKurmanbekova.pdf" target="_blank" rel="noopener">Download resume</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <dl class="facts glass rise" style="--i:4">
+        <div><dt>Studying</dt><dd>Computer Programming and Analysis (Co-op), Fanshawe College</dd></div>
+        <div><dt>Graduating</dt><dd>December 2026</dd></div>
+        <div><dt>Based in</dt><dd>London, Ontario · ready to relocate anywhere</dd></div>
+        <div><dt>Looking for</dt><dd>Junior software, web or integration developer, application support, QA, security or systems analyst</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 id="projects-title">Projects</h2>
+        <p>Built for my courses at Fanshawe. The chat app's source code is private, and I'm happy to walk through it in an interview.</p>
+      </div>
+
+      <article class="card glass project project-featured reveal">
+        <div>
+          <div class="project-meta"><span class="badge">Course project</span><span class="badge">Live demo</span></div>
+          <h3>WebChat</h3>
+          <p class="summary">A real-time chat app. Pick a username, join a room by name and talk with other people instantly.</p>
+          <ul class="points">
+            <li>Rooms are created on demand, and usernames are unique</li>
+            <li>Live "is typing…" indicators and a member list for each room</li>
+            <li>Edit or delete your last message with <code>/edit</code> and <code>/del</code></li>
+            <li>The Express server also serves the built React app, so the whole project is one deployment</li>
+          </ul>
+          <ul class="chips" aria-label="Technologies used">
+            <li>React</li><li>Material UI</li><li>Vite</li><li>Node.js</li><li>Express</li><li>Socket.IO</li>
+          </ul>
+          <div class="links">
+            <a class="btn btn-primary" href="https://webchat-aku.onrender.com/" target="_blank" rel="noopener" data-href="demo">Open live demo <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <p class="note">On free hosting, the first load after a quiet period can take about a minute. Open it in two browser tabs with different usernames to see it work.</p>
+        </div>
+
+        <div class="shots">
+          <div class="tabs" role="group" aria-label="Choose a screenshot">
+            <button class="tab" type="button" data-shot="chat" aria-pressed="true">Chatting</button>
+            <button class="tab" type="button" data-shot="members" aria-pressed="false">Members and edits</button>
+            <button class="tab" type="button" data-shot="join" aria-pressed="false">Join screen</button>
+          </div>
+
+          <div class="pair" data-panel="chat">
+            <figure><img src="assets/webchat-chat-a.jpg" width="760" height="621" alt="WebChat as seen by user test1: a conversation with an edited message and a notice that test2 is typing"><figcaption>test1's window</figcaption></figure>
+            <figure><img src="assets/webchat-chat-b.jpg" width="760" height="621" alt="WebChat as seen by user test2: the same conversation with a slash typed in the message box"><figcaption>test2's window</figcaption></figure>
+          </div>
+          <div class="pair" data-panel="members" hidden>
+            <figure><img src="assets/webchat-members-a.jpg" width="760" height="621" alt="WebChat side menu listing the two users currently in the room"><figcaption>Members of the room</figcaption></figure>
+            <figure><img src="assets/webchat-members-b.jpg" width="760" height="621" alt="WebChat showing a message marked as deleted next to an edited message"><figcaption>A deleted message, seen live by the other user</figcaption></figure>
+          </div>
+          <div class="pair single" data-panel="join" hidden>
+            <figure><img src="assets/webchat-join.jpg" width="760" height="621" alt="WebChat join screen with a logo and fields for user name and room name"><figcaption>Join screen</figcaption></figure>
+          </div>
+          <p class="shot-note" id="shotNote">Two browsers in the same room. Messages, edits and typing status appear on both sides immediately.</p>
+        </div>
+      </article>
+
+      <article class="card glass project reveal">
+        <div class="project-meta"><span class="badge">Team project (5 people)</span><span class="badge">Live demo</span></div>
+        <h3>Dating App</h3>
+        <p class="summary">A matchmaking web app with member profiles, ranked automatic matches and a contact reveal. My part was mainly the backend logic (sign-in check, matching, contact reveal) and the member-facing pages.</p>
+        <ul class="points">
+          <li>Backend: ASP.NET Core 9 API with Entity Framework Core and PostgreSQL on Supabase. I wrote the JWT validation that identifies the signed-in user</li>
+          <li>Matching: a ranked-matches endpoint that scores people by the skills each one has and wants, with age and profile details, plus the contact reveal and a Match table that tracks each user's matches</li>
+          <li>Access rules: free and paid members and the product manager role see different data and pages, enforced in the API and the interface</li>
+          <li>Front end (Vue 3 + TypeScript): I built signup with validation, profile setup with skill tags and photo upload, the matches page and the dashboard statistics. Teammates built the login page, styling and the Docker setup</li>
+          <li>Teamwork: five people, feature branches and pull requests with code review</li>
+        </ul>
+        <ul class="chips" aria-label="Technologies used">
+          <li>C#</li><li>ASP.NET Core</li><li>Entity Framework Core</li><li>PostgreSQL</li><li>Supabase</li><li>JWT</li><li>Vue 3</li><li>TypeScript</li>
+        </ul>
+        <div class="cta" style="margin-top:18px">
+          <a class="btn btn-primary" href="https://datingapp.minte.tech" target="_blank" rel="noopener">Open live demo <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost" href="https://github.com/DragonScripter/DatingApp" target="_blank" rel="noopener">Team repository</a>
+          <a class="btn btn-ghost" href="https://github.com/DragonScripter/DatingApp/pulls?q=is%3Apr+author%3Aaku-05" target="_blank" rel="noopener">My pull requests</a>
+        </div>
+      </article>
+
+      <article class="card glass project reveal">
+        <div class="project-meta"><span class="badge">Course project</span><span class="badge">Live demo in progress</span></div>
+        <h3>Travel Advisories</h3>
+        <p class="summary">Search any country and read its current travel advisory, then bookmark the countries you care about.</p>
+        <ul class="points">
+          <li>Country search with autocomplete, shown as "(CA) Canada"</li>
+          <li>REST API in Express, with advisory and country data merged and stored in MongoDB</li>
+          <li>Bookmarks saved in the database, plus a refresh route to reload the data</li>
+        </ul>
+        <ul class="chips" aria-label="Technologies used">
+          <li>React</li><li>Material UI</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>REST API</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-title" style="padding-top:8px">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 id="skills-title">Skills</h2>
+        <p>What I used in the projects above and in my courses.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group glass reveal" style="--d:0s">
+          <h3>Front end</h3>
+          <ul class="chips"><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Vue</li><li>Material UI</li><li>HTML</li><li>CSS</li></ul>
+        </div>
+        <div class="skill-group glass reveal" style="--d:.1s">
+          <h3>Back end</h3>
+          <ul class="chips"><li>C# and ASP.NET Core</li><li>Node.js</li><li>Express</li><li>REST APIs</li><li>JWT authentication</li><li>Socket.IO</li></ul>
+        </div>
+        <div class="skill-group glass reveal" style="--d:.2s">
+          <h3>Data</h3>
+          <ul class="chips"><li>PostgreSQL</li><li>Entity Framework Core</li><li>Supabase</li><li>MongoDB</li></ul>
+        </div>
+        <div class="skill-group glass reveal" style="--d:.3s">
+          <h3>Tools</h3>
+          <ul class="chips"><li>Git and GitHub</li><li>Chrome DevTools</li><li>Google Workspace</li><li>Microsoft 365 and Teams</li></ul>
+        </div>
+      </div>
+      <p class="skills-foot reveal">Also studied at Fanshawe: Java and C++.</p>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="section-head reveal"><h2 id="about-title">About me</h2></div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a Computer Programming and Analysis student at Fanshawe College, graduating in December 2026, and I'm looking for a job in IT. I want to start my career in this field, learn from the people and the experience around me, and work hard. I adapt quickly.</p>
+          <p>So far my work experience is in customer service. Working and studying at the same time taught me a lot, and I'm sure those skills will help me in my career.</p>
+        </div>
+        <div class="timeline">
+          <div class="reveal" style="--d:.1s">
+            <h3>Education</h3>
+            <div class="entry">
+              <strong>Computer Programming and Analysis, Advanced Diploma (Co-op)</strong>
+              <span class="where">Fanshawe College, London, Ontario</span>
+              <span class="when">Jan 2024 – Dec 2026 (expected) · GPA 4.0</span>
+            </div>
+          </div>
+          <div class="reveal" style="--d:.2s">
+            <h3>Experience</h3>
+            <div class="entry">
+              <strong>Sales Associate</strong>
+              <span class="where">CDS (Club Demonstration Services), Saint John, NB and London, ON</span>
+              <span class="when">Oct 2025 – Present</span>
+              <p>Talk to customers about the product being sampled, prepare samples quickly, and work with coworkers toward the same goal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <h2 id="contact-title">Let's talk</h2>
+        <p class="sub">I'm looking for my first role in IT. If you have a junior position, send me a message and I'll get back to you. I'm ready to relocate anywhere.</p>
+      </div>
+      <ul class="contact-list">
+        <li class="contact-row glass reveal" style="--d:0s">
+          <span class="label">Resume</span>
+          <a class="value" href="assets/Resume_AkyikatKurmanbekova.pdf" target="_blank" rel="noopener">Download (PDF, 1 page)</a>
+        </li>
+        <li class="contact-row glass reveal" style="--d:.05s">
+          <span class="label">Email</span>
+          <a class="value" href="mailto:akyikat.kurmanbekova@gmail.com" data-href="email" data-text="email">akyikat.kurmanbekova@gmail.com</a>
+          <button class="copy" type="button" id="copyEmail">Copy</button>
+        </li>
+        <li class="contact-row glass reveal" style="--d:.15s">
+          <span class="label">LinkedIn</span>
+          <a class="value" href="https://www.linkedin.com/in/aku-kurmanbekova/" target="_blank" rel="noopener" data-href="linkedin">linkedin.com/in/aku-kurmanbekova</a>
+        </li>
+        <li class="contact-row glass reveal" style="--d:.25s">
+          <span class="label">GitHub</span>
+          <a class="value" href="https://github.com/aku-05" target="_blank" rel="noopener" data-href="github">github.com/aku-05</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 <span data-text="name">Aku</span></span>
+    <span>Click the night sky for a shooting star ✦</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
